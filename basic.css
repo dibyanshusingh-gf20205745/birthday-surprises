@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    background: linear-gradient(to right, #cd1e23, #1a75d7);
+    text-align: center;
+    color: rgba(241, 233, 233, 0.878);
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+    display: none;
+    background: rgb(142, 8, 160);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.reveal-button {
+    background: #ab0650;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-family: 'Dancing Script', cursive;
+}
+
+.reveal-button:hover {
+    background: #0479c8;
+}
+
+.next-button {
+    background: #c5096a;
+    border: none;
+    padding: 11px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    display: none;
+    font-family: 'Dancing Script', cursive;
+}
+
+.next-button:hover {
+    background: #ff3366;
+}
+
+.heart {
+    font-size: 30px;
+    animation: heartbeat 1s infinite;
+    color: red;
+    margin-top: 10px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
